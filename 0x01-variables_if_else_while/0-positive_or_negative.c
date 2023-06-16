@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <time.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
+ * Description - Assigns a random number to the variable n and prints whether is positive, negative or zero
  * Return: Always 0 (Success)
  */
 
