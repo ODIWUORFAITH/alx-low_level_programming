@@ -1,0 +1,18 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ * Description: Print a-z in reverse
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	char ch = 'z';
+
+	while (ch >= 'a')
+	{
+		putchar('\n');
+		--ch;
+	}
+	putchar('\n');
+	return (0);
+}
