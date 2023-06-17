@@ -3,6 +3,7 @@
  * main - Entry point
  * Return: Always 0 (Sucess)
  */
+int main(void)
 {
 	int num1 = 0, num2;
 
