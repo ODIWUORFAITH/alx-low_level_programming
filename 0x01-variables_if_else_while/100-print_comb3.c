@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: Print all possible different 
- * Return: 0 (Success)
+ * Description: Print all possible different combinations. 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -17,7 +17,6 @@ int main(void)
 			{
 				putchar(num1 + 48);
 				putchar(num2 + 48);
-
 				if (num1 + num2 != 17)
 				{
 					putchar(',');
