@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: Print all possible different combinations. 
+ * main - Entry point 
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num1 = 0, num2;
+	int num1 = 0,num2;
 
 	while (num1 <= 9)
 	{
