@@ -29,7 +29,7 @@ int main(void)
 				}
 				++num3;
 			}
-			num2;
+			++num2;
 		}
 		++num1;
 	}
