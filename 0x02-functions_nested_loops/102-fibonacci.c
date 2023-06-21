@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the first 52 fibonacci numbers
- * Return: Nothing!
+ * Return: 0 on success
  */
 int main(void)
 {
@@ -11,14 +11,14 @@ int main(void)
 	while (i < 50)
 	{
 		if (i == 0)
-			printf("%ld%, j);
+			printf("%ld%, ", j);
 		else if (i == 1)
-			printf(", %ld", k);
+			printf("%ld, ", k);
 		else
 		{
 			k += j;
 			j = k - j;
-			printf(", %ld", k);
+			printf("%ld, ", k);
 		}
 		++i;
 	}
