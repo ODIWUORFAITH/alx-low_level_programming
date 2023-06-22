@@ -4,7 +4,7 @@
  * @size: The number of squares/number of times
  * Return: empty
  */
-void print_squares(int size)
+void print_square(int size)
 {
 	int x, y;
 
