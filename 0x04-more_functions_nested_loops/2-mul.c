@@ -5,7 +5,7 @@
  * @y - the second number to multiply with first number
  * Return: the result of multiplication between x param and y param
  */
-int mult(int x, int y)
+int mul(int x, int y)
 {
 	return (x * y);
 }
