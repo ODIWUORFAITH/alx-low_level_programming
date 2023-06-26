@@ -5,7 +5,7 @@
  * @b: The second integer to be swapped
  * Return: This function swaps the values of the integers pointed to @a and @b
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	int temp = *a;
 	*a = *b;
