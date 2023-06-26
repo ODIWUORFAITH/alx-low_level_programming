@@ -3,7 +3,7 @@
  * swap_int - Swaps the vallues of two integers
  * @a: The first integer to be swapped
  * @b: The second integer to be swapped
- * Reurn: nothing
+ * Return: nothing
  */
 void swap_int(int *a, int *b);
 /* the function that swaps the values of two integers. */
