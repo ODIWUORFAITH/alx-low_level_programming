@@ -3,7 +3,7 @@
  * _strspn - Entry point
  * @s: input
  * @accept: input
- * Return: Always 0 (Success)
+ * Return: Number of characters in s that match any character in accept
  */
 unsigned int _strspn(char *s, char *accept)
 {
