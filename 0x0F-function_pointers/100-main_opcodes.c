@@ -1,7 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Prints the opcodes of its own main function.
+ * print_opcodes - Prints the opcodes of a given function.
+ * @function_ptr: Pointer to the function.
+ * @num_bytes: Number of bytes to print.
+ */
+void print_opcodes(void *function_ptr, int num_bytes)
+{
+	unsigned char *opcode_ptr = (unsigned char *)function_ptr;
+	int i;
+
+	for (i = 0; i < num_bytes; i++)
+	{
+		printf("%02x", opcode_ptr[i]);
+		if (i < num_bytes - 1)
+			printf(" ");
+	}
+	printf("\n");
+}
+/**
+ * main - Entry point of the program.
  * @argc: The number of arguments passed to the program.
  * @argv: Array of pointers to the arguments.
  * Return: 0 on success, 1 if incorrect number of arguments,
@@ -9,7 +27,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, num_bytes;
+	int num_bytes;
 
 	if (argc != 2)
 	{
@@ -22,13 +40,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return 2;
 	}
-	unsigned char *main_ptr = (unsigned char *)&main;
-	for (i = 0; i < num_bytes; i++)
-	{
-		printf("%02x", *(main_ptr + i));
-		if (i < num_bytes - 1)
-			printf(" ");
-	}
-	printf("\n");
+	print_opcodes(main, num_bytes);
 	return 0;
 }
