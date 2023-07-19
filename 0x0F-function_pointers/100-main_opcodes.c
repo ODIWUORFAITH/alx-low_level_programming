@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - Prints the opcodes of its own main function.
  * @argc: The number of arguments passed to the program.
  * @argv: Array of pointers to the arguments.
- *
  * Return: 0 on success, 1 if incorrect number of arguments,
  *         2 if the number of bytes is negative.
  */
@@ -25,7 +23,6 @@ int main(int argc, char *argv[])
 		return 2;
 	}
 	unsigned char *main_ptr = (unsigned char *)&main;
-
 	for (i = 0; i < num_bytes; i++)
 	{
 		printf("%02x", *(main_ptr + i));
