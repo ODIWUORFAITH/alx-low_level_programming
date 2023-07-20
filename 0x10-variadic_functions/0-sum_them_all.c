@@ -4,7 +4,7 @@
  * sum_them _all - Returns the sum of all its parameters
  * @n: The name of the parameter passed to the function
  * @...: A varriable number of parameters to calculate the sum 
- * Return: If n == 0, return 0 , otherwise - the sum of all parameters
+ * Return: If n == 0, return 0 , otherwise , return the sum of all parameters
  */
 int sum_them_all(const unsigned int n, ...)
 {
