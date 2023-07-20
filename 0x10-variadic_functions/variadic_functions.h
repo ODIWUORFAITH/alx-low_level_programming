@@ -1,5 +1,5 @@
-#ifndef VARIADIC_H
-#define VARIADIC_H
+#ifndef VARIADIC_FNS
+#define VARIADIC_FNS
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
